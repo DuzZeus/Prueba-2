@@ -1,0 +1,70 @@
+/*---QUE FUNCION HACE CADA COSA C:---*/
+
+h1/*Primero se escribe el selector,este esta escrito en nuestro codigo html, el cual queremos diseñar*/
+/*Despes toca crear un "bloque de declaracion" que se crea a partir de dos llaves "{}"*/
+/*Y dentro de este se escriben las "declaraciones" separadas por ";"*/
+{	/*Cada "declaracion" incluye un nombre de propiedad "CSS" y un valor, separados por dos puntos*/
+	color: #000;
+	font-size: 12px;
+}	/*Cada declaracion "CSS" siempre termina con un punto y coma, y los bloques de declaracion estan rodeados de llaves*/
+
+/*-Selectores de CSS-*/
+
+/*Los selectores CSS se utilizan para "encontrar" (o seleccionar) elementos HTML en función de su nombre de elemento, id, clase, atributo y más*/
+/*Cuando utilizamos un selector este cambiara el diseño de nuestra pagina ya sea una parte en especifico o toda la pagina*/
+/*Si utilizaramos el selector "p" este cambiaria todo el contenido que abarca en nuestro codigo HTML */
+
+/*Selector "id"*/
+/*el selector id utiliza el atributo id del codigo html para selecionar un elemento en especifico*/
+/*este a diferencia del class, solo puede ser incluido una vez en el codigo. ejemplo
+<p id="parrafo1">
+ssdasdadasa
+sdasdassad
+</p>
+<p id="parrafo1">
+asdassfaffasfasf
+sfdafasfasfsafas
+</P>*/
+/*Lo anterior no es conveniente ya que crearia conflictos en la sintaxis(basicamente o ignoraria la id o solo cambiaria la primera)*/
+/*~~"y ningun nombre de identificacion de la id debe empezar con numeros"~~*/
+/*Y para ser nombrados en nuestra hoja de CSS se escribe con una almuadilla "#" y despues el nombre que le dimos en el codigo
+eje. 
+#Identificador1 {}
+*/
+
+/*Selector class (clase)*/
+
+/*Este a diferencia del id, puede ser nombrada mas de una vez en el codigo html*/
+/*Y en lugar de escribir una "#" que se usa en la id, aqui usamos un punto "." */
+/*eje.
+.clase1{}
+*/
+
+/*Selectores agrupados*/
+/*Esto es muy util, ya que si tenemos elementos con las mismas decalaraciones de estilo, podemos agruparlos solo utilizando una coma "," */
+/*eje. en lugar de hacer esto:
+ h1 {
+	text-align:center;
+	color:#ff0000;
+ }
+ p {
+	text-align:center;
+	color:#ff0000;
+ }
+*/
+/*hacemos esto
+
+h1, p {
+	text-align:center;
+	color:#ff0000;
+}
+*/
+
+/*~~Aqui explicariamos las propiedades fuentes, pero, son muy variadas y no son muy relevantes, asi que, nos saltaremos este tema~~*/
+
+/*--Enlazar nuestra hoja de estilos CSS a nuestro codigo HTML--*/
+/*<link rel="stylesheet" type="text/css" href="(la direccion de nuestra hoja ).css">*/
+/*EL real="" es para especificar que el estilo siempre se cargara y aplicara*/
+/*el atributo type="" es para especificar el tipo de archivo:
+"text/css" para hojas de estilo de cascada normal
+"text/javascript" si es script etc. Con ello permitimos a los navegadores omitir los tipos de archivos que no soportan*/
